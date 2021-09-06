@@ -1,0 +1,9 @@
+Dockerfile
+README.md
+LICENSE
+
+__pycache__
+_setup*
+requirements.txt
+test_*
+*.http
