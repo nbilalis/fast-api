@@ -1,0 +1,59 @@
+GET http://127.0.0.1:8000/docs HTTP/1.1
+
+###
+
+GET http://127.0.0.1:8000/redoc HTTP/1.1
+
+###
+
+GET http://127.0.0.1:8000/openapi.json HTTP/1.1
+
+###
+
+GET http://127.0.0.1:8000/books HTTP/1.1
+
+###
+
+GET http://127.0.0.1:8000/books/1 HTTP/1.1
+
+###
+
+GET http://127.0.0.1:8000/books/666 HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8000/books HTTP/1.1
+
+###
+
+POST http://127.0.0.1:8000/books HTTP/1.1
+content-type: application/json
+
+{
+    "id": 1,
+    "title": "Book title"
+}
+
+###
+
+POST http://127.0.0.1:8000/books HTTP/1.1
+content-type: application/json
+
+{
+    "id": 3,
+    "title": "Book title",
+    "isbn": "1234567890",
+    "price": 9.99
+}
+
+###
+
+PUT http://127.0.0.1:8000/books HTTP/1.1
+content-type: application/json
+
+{
+    "id": 2,
+    "title": "FastAPI",
+    "isbn": "222-222-2222",
+    "price": 12
+}
