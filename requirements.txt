@@ -1,0 +1,10 @@
+FastAPI==0.82.0
+motor==3.0.0
+uvicorn[standard]==0.18.3
+
+requests
+pytest
+
+flake8
+autopep8
+python-dotenv
